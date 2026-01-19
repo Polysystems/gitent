@@ -1,0 +1,28 @@
+[package]
+name = "gitent-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "CLI for gitent - version control for AI agents"
+
+[[bin]]
+name = "gitent"
+path = "src/main.rs"
+
+[dependencies]
+gitent-core = { path = "../gitent-core" }
+gitent-server = { path = "../gitent-server" }
+
+tokio = { workspace = true }
+clap = { workspace = true }
+colored = { workspace = true }
+dialoguer = { workspace = true }
+indicatif = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
